@@ -1,2 +1,36 @@
 *.htaccess
 wp-config.php
+# Thanks to: https://gist.github.com/jdbartlett/444295
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!purecss/
+www/*
+!.gitignore
+!www/wp-content/
+
+# Ignore everything in the "wp-content" directory, except the "plugins" and "themes" directories.
+www/wp-content/*
+!www/wp-content/plugins/
+!www/wp-content/themes/
+
+# Ignore everything in the "themes" directory, except the themes you specify
+www/wp-content/themes/*
+!www/wp-content/themes/purecss.io-wordpress/
+!www/wp-content/themes/purecss.io-wordpress-child/
+
+# Other
+www/wp-content/upgrade
+www/wp-content/uploads
+www/sitemap.*
+www/wp-config.php
+*.sql
+
+# Hidden files
+*.DS_Store
+*Thumbs.db
+*.sass-cache*
+*~imageoptim*
+www/.htaccess
+www/.htaccess
+*.htaccess
